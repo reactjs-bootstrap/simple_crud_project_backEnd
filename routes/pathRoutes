@@ -1,0 +1,16 @@
+const router = require("express").Router();
+
+router.get("/", (req, res) => {
+  res.send("Get Method Called!");
+});
+router.post("/create", (req, res) => {
+  res.send("Post Method Called!");
+});
+router.put("/update", (req, res) => {
+  res.send("Update Method Called!");
+});
+router.delete("/delete", (req, res) => {
+  res.send("Delete Method Called!");
+});
+
+module.exports = router;
